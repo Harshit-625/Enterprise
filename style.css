@@ -18,6 +18,11 @@ nav
   align-items: center;
   justify-content: space-around;
 }
+nav a
+{
+  text-decoration: none;
+  color: black;
+}
 nav h1
 {
   font-family: "Montserrat", sans-serif;
@@ -32,6 +37,11 @@ nav ul
   justify-content: space-evenly;
   list-style: none;
   width: 25%;
+}
+nav ul a
+{
+  text-decoration: none;
+  color: #204E51;
 }
 nav ul li
 {
@@ -387,3 +397,156 @@ footer
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* PRODCUCT PAGE */
+
+.product-descp,.product-descp-even
+{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.product-descp-even
+{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #204E51;
+}
+.product-text,.product-text-even
+{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.product-text p ,.product-text-even p
+{
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.product-text h1,.product-text-even h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 3rem;
+  background-color: white;
+  color: #204E51;
+  height: 8vh;
+  width: 80%;
+  text-align: center;
+  border-radius: 15px;
+
+}
+.product-name,.product-name-even{
+
+  position: relative;
+  width: 35%;
+  height: 80%;
+}
+.product-name button ,.product-name-even button{
+  position: absolute;
+  height: 10vh;
+  width: 30%;
+  margin-left: 35% ;
+  margin-top: 85%;
+  border: 5px solid #204E51;
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 20px;
+  color: #204E51;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+}
+.product-name img ,.product-name-even  img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, -0.8), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.product-attribute ,.product-attribute-even
+{
+  height: 100%;
+  width: 90%;
+  padding: 1%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+.attr ,.attr-even
+{
+  background-color: white;
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  height: 15%;
+}
+#key,#key-even
+{
+  background-color: #204e51ba;
+  color: white;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius:15px ;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 2rem;
+}
+#key-even
+{
+  background-color: white;
+  color: #204E51;
+}
+#value,#value-even
+{
+  margin-left: 5%;
+
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  color: #204E51;
+  font-size: 1.75rem;
+  font-style: normal;
+}
+#value-even
+{
+  background-color: #204e51ba;
+  color: white;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-left:5% ;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
