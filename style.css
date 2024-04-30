@@ -143,7 +143,7 @@ nav ul li
 
 .company-details
 {
-  margin-top: 5vh;
+  margin-top: 3vh;
   height: 85vh;
   width: 100vw;
   display: flex;
@@ -223,9 +223,10 @@ nav ul li
 }
 .product-details
 {
-  height: 80vw;
+  height: auto;
   width: 100vw;
   margin-top: 10vh;
+  margin-bottom: 10vh;
   display: flex;
   gap: 2vh;
   flex-direction: column;
@@ -303,4 +304,86 @@ nav ul li
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
+}
+footer
+{
+  background-color: #204E51;
+  height: 70vh;
+  margin-bottom: 10vh;
+  display: flex;
+  padding: 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-comp-details
+{ color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.footer-comp-details h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+.footer-comp-details p
+{
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer-social-icons
+{
+  display: flex;
+  gap: 1vw;
+}
+.footer-social-icons a
+{
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.footer-link-lists
+{
+  padding: 2%;
+  width: 40%;
+  height: auto;
+  margin-right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-link-lists ul
+{
+  list-style: none;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.footer-link-lists h1
+{
+  color: #FFFF;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 2rem;
+}
+.footer-link-lists ul li a
+{
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #F0F1F1;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
