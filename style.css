@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #F0F1F1;
+  overflow-x: hidden;
+}
+nav
+{
+  background-color: white;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+nav ul
+{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 25%;
+}
+nav ul li
+{
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.nav-buttons
+{
+  display: flex;
+  gap: 2vw;
+}
+.nav-buttons a , .nav-buttons button
+{
+
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+  height:6vh;
+  width: 8vw;
+  border-radius: 10px;
+  border: none;
+  font-size:  1rem;
+}
+#contact-us
+{
+  background-color: #204E51;
+  color: white;
+}
+#locate-us
+{
+  background-color: white;
+  color: #204E51;
+  border: 2px solid #204E51;
+}
+
+/* SECTION 1 */
+.main
+{
+  background: linear-gradient( rgba(0, 0, 0, 0.546), rgba(0, 0, 0, 0.585) ), url('./assets/chemical.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  gap: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main h1
+{
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5rem;
+
+  color: white;
+  width: 75%;
+  text-align: center;
+  height: auto;
+}
+.main p
+{
+  text-align: center;
+  width: 60%;
+  color: white;
+
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.main-buttons
+{
+  display: flex;
+  gap: 2vw;
+}
+
+.main-buttons a, .main-buttons button
+{
+  height: 6vh;
+  width: 10vw;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#get-started
+{
+  background-color: #204E51;
+  color: white;
+}
+
+#learn-more
+{
+  background-color: transparent;
+  border:1px solid white;
+  color: white;
+}
+
+.company-details
+{
+  margin-top: 5vh;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding-top: 5vh;
+}
+.company-details h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 3rem;
+  color: #204E51;
+}
+.company-details p
+{
+  
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  width: 60%;
+  text-align: center;
+}
+.card-cont
+{
+  width: 90%;
+  padding: 2%;
+  /* border: 3px dashed #204e516e; */
+  height: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.card
+{
+  background-color: #FFFF;
+  border-radius: 10px;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, -0.8), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card img
+{
+  height:200px;
+}
+.card h2
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 1.75rem;
+  color: #204E51;
+}
+.card h3
+{
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.contact
+{
+  margin-top: 30vh;
+}
+.product-details
+{
+  height: 80vw;
+  width: 100vw;
+  margin-top: 10vh;
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+  align-items: center;
+}
+.product-details h1
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 3rem;
+  color: #204E51;
+}
+.product-details p
+{
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 50%;
+  text-align: center;
+}
+.products-cont
+{
+  width: 90%;
+  padding: 2%;
+  /* border: 3px dashed #204e516e; */
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+}
+.product-card
+{
+  background-color: #FFFF;
+  border-radius: 10px;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, -0.8), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  height: 60vh;
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card img
+{
+  height:200px;
+}
+.product-card h2
+{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 720;
+  font-style: normal;
+  font-size: 1.75rem;
+  color: #204E51;
+}
+.product-card h3
+{
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.product-details a
+{
+  color: #204E51;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
