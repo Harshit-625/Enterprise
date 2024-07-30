@@ -111,7 +111,7 @@ nav ul li
 }
 
 /* SECTION 1 */
-.main
+.main 
 {
   background: linear-gradient( rgba(0, 0, 0, 0.546), rgba(0, 0, 0, 0.585) ), url('./assets/chemical.jpg');
   background-size: cover;
@@ -124,7 +124,7 @@ nav ul li
   align-items: center;
   justify-content: center;
 }
-.main h1
+.main h1 ,.main2 h1
 {
 
   font-family: "Montserrat", sans-serif;
@@ -138,7 +138,7 @@ nav ul li
   text-align: center;
   height: auto;
 }
-.main p
+.main p , .main2 p
 {
   text-align: center;
   width: 60%;
@@ -181,7 +181,7 @@ nav ul li
 .company-details
 {
   margin-top: 3vh;
-  height: 85vh;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -234,6 +234,7 @@ nav ul li
   height: 40vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .card img
@@ -246,20 +247,83 @@ nav ul li
   font-optical-sizing: auto;
   font-weight: 720;
   font-style: normal;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #204E51;
 }
 .card h3
 {
   font-size: 1rem;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.contact
+.main2
 {
-  margin-top: 30vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.546), rgba(0, 0, 0, 0.585) ), url('./assets/chemical2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  gap: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh
+}
+
+.dealer-cont
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dealer-div
+{
+  background-color: #F0F1F1;
+  border-radius: 50px;
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+.dealer-div h2{
+  font-size: 1.25rem;
+  padding: 2vh;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+}
+.dealer-div img
+{
+  height: 200px;
+}
+.dealer-info{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vh;
+}
+.dealer-div ul
+{
+  list-style: none;
+}
+.dealer-div ul li{
+  font-size: 1rem;
 }
 .product-details
 {
@@ -475,6 +539,10 @@ footer
   width: 35%;
   height: 80%;
 }
+.mv-product-name{
+  display: none;
+
+}
 .product-name button ,.product-name-even button{
   position: absolute;
   height: 10vh;
@@ -686,6 +754,13 @@ footer
   outline: none;
   background: transparent;
   border-bottom: 2px solid #204E51;
+
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#204E51;
 }
 #contct-form-button
 {
@@ -799,6 +874,12 @@ footer
 #dropdown-label {
   display: block;
   margin-bottom: 10px;
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#204E51;
 }
 
 .custom-select-container {
@@ -806,12 +887,27 @@ footer
   width: 100%;
 }
 
+.mv-form-header
+{
+  display: none;
+}
 #dropdown-input {
+
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#204E51;
+
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 0.25px solid #11292b;
+  border-radius: 10px;
   cursor: pointer;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+
+
 }
 
 .custom-select-container::after {
@@ -821,6 +917,12 @@ footer
   right: 10px;
   transform: translateY(-50%);
   pointer-events: none;
+  outline: none;
+}
+
+#dropdown-input:focus
+{
+  outline: none;
 }
 
 .options {
@@ -837,6 +939,12 @@ footer
 .options div {
   padding: 10px;
   cursor: pointer;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:#204E51;
 }
 
 .options div:hover {
@@ -861,7 +969,7 @@ input[type="submit"]:hover {
   nav{
     height: 10vh;
     width: 100vw;
-    position: fixed   ;
+    position: fixed;
     background-color: white;
     z-index: 1;
   }
@@ -947,46 +1055,103 @@ input[type="submit"]:hover {
   {
     width: 90%;
   }
-
-  .company-details {
-    max-height: 60vh;
-  }
-  .company-details h1
-  {
-    font-size: 2rem;
-  }
-  .company-details p{
-    font-size: 1rem;
-  }
-  .slider-button
-  {
-    display: block;
-  }
-  .slider-container {
-    display: flex;
-    align-items: center;
+  .company-details{
+    height: auto;
   }
   .card-cont{
-    display: flex;
-    overflow: hidden;
-    width: 300px;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
+      padding:20px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
   }
   .card
   {
-    min-width: 300px;
-    height: 300px;
+    height:48vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card h2
+  {
+    font-size: 1.15rem;
+  }
+  .card h3
+  {
+    font-size: 0.75rem;
+  }
+  .main2 {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+  .dealer-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .dealer-div img{
+    height: 100px;
+  }
+  .dealer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    height: 50%;
+    width: 80%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .dealer-info{
+    height: 60%;
+    width: 80%;
+  }
+  .dealer-info h2
+  {
+    font-size: 1.05rem;
+  }
+  .dealer-info ul{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
   }
-
+  .dealer-info ul li{
+    font-size: 1rem;
+  }
   /* PRODUCTS SECTION*/
+  .product-descp 
+  {
+    padding-top: 17vh;
+    height: 100%;
+    width: 100%;
+  }
   .product-details
   {
     height: auto;
+  }
+  .mv-product-name{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    margin-top:22%;
+    margin-left: 12%;
+    width: 80%;
+  
+    border: 3px solid #204E51;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 720;
+    font-style: normal;
   }
   .product-details h1
   {
@@ -1083,9 +1248,9 @@ input[type="submit"]:hover {
   .product-descp
   {
     display: flex;
-    height:90%;
-    width: 100%;
-    padding-top: 12vh;
+    height:100%;
+    width: 90%;
+    padding-top: 20vh;
     padding-bottom: 5vh;
     flex-direction: column-reverse;
   }
@@ -1121,7 +1286,7 @@ input[type="submit"]:hover {
   .product-name button ,.product-name-even button{
     font-size: 1rem;
     height: 10%;
-    margin-top: 35vh;
+    margin-top: 55vh;
     border: 2px solid #11292b;
   }
   .attr ,.attr-even
@@ -1131,5 +1296,57 @@ input[type="submit"]:hover {
   #key,#value , #key-even , #value-even
   {
     font-size: 1rem;
+  }
+
+  /* CONTACT PAGE  */
+  .contact-cont
+  {
+    height: auto; 
+    margin-top:12vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-address
+  {
+    width: 100%;
+  }
+  .contact-details
+  {
+    height: 35%;
+  }
+  .contact-details ul{
+    height: 100%;
+    display: flex;
+    gap: 1vh;
+  }
+  .contact-form
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .mv-form-header
+  {
+
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    height: 5vh;
+    font-style: normal;
+    font-size:2rem;
+    color: #204E51;
+    margin-top: 2vh;
+  }
+  #form
+  {
+    width: 100%;
+  }
+  #form button{
+    width: 30vw;
+    margin-left: 35%;
   }
 }

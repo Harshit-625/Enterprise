@@ -1,30 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const cardContainer = document.getElementById("cardContainer");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    let currentIndex = 0;
-
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  });
-
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < 3) {
-      // Number of cards - 1
-      currentIndex++;
-      updateSlider();
-    }
-  });
-
-  function updateSlider() {
-    const offset = -currentIndex * 310; // Card width + margin (200 + 10)
-    cardContainer.style.transform = `translateX(${offset}px)`;
-  }
-});
-
 // HAMBURGER FUNCTIONALITY
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("toggleButton");
