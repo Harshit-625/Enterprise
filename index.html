@@ -6,20 +6,29 @@
   <title>Jain Enterprise</title>
   <script src="https://kit.fontawesome.com/4aefce76b6.js" crossorigin="anonymous"></script> 
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 
   <!-- NAVBAR  -->
   <nav>
-    <a href="/index.html"><h1>Jain Enterprise</h1></a>
-    <ul>
-      <a href="/index.html"><li>Home</li></a>
-      <a href=""><li>About</li></a>
-      <a href="/Products.html"><li>Products</li></a>
-    </ul>
-    <div class="nav-buttons">
-      <a href="#"><button id="contact-us">Contact Us</button></a>
-      <a href="#"><button id="locate-us">Locate Us</button></a>
+    <a href="/index.html" class="brand-title"><h1>Syncpolymer Solutions</h1></a>
+    <a href="#" class="toggle-button" id="toggleButton">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
+    <div class="navbar-links" id="navbarLinks">
+      <ul>
+        <a href="/index.html"><li>Home</li></a>
+        <a href="/about.html"><li>About</li></a>
+        <a href="/Products.html"><li>Products</li></a>
+      </ul>
+      <div class="nav-buttons">
+        <a href="/contact.html"><button id="contact-us">Contact Us</button></a>
+        <a href="/contact.html"><button id="locate-us">Locate Us</button></a>
+      </div>
     </div>
   </nav>
   <!-- NAVBAR  -->
@@ -37,53 +46,53 @@
   
 
   <!-- PAGE 2 -->
+
   <section class="company-details">
     <h1>About Us</h1>
     <p>Driven by innovation, we redefine industrial cooling solutions for maximum efficiency and sustainability. Our commitment to excellence ensures optimal performance in every application.</p>
-    <div class="card-cont">
-
-      <div class="card">
-        <img src="./assets/business.jpg" alt="">
-        <h2>Nature of Business</h2>
-        <h3>Exporter and Wholesale Trader</h3>
-      </div>
+    <div class="slider-container">
+      <button id="prevBtn" class="slider-button"><<</button>
+      <div class="card-cont" id="cardContainer">
+        <div class="card">
+          <img src="./assets/business.jpg" alt="">
+          <h2>Nature of Business</h2>
+          <h3>Exporter and Wholesale Trader</h3>
+        </div>
       
-      <div class="card">
-        <img src="./assets/employees.jpg" alt="">
-        <h2>Number of Employess</h2>
-        <h3>11 to 25 people</h3>
-      </div>
-
-      <div class="card">
-        <img src="./assets/establishment.jpg" alt="">
-        <h2>Year of Establishment</h2>
-        <h3>1978</h3>
-      </div>
-    
-      <div class="card">
-        <img src="./assets/legal.jpg" alt="">
-        <h2>Legal Status of Firm</h2>
-        <h3>Partnership Firm</h3>
-      </div>
-
-      <div class="card">
-        <img src="./assets/turnover.jpg" alt="">
-        <h2>Annual Turnover</h2>
-        <h3>Rs.100-500 Crore</h3>
-      </div>
+        <div class="card">
+          <img src="./assets/employees.jpg" alt="">
+          <h2>Number of Employess</h2>
+          <h3>11 to 25 people</h3>
+        </div>
+        <div class="card">
+          <img src="./assets/establishment.jpg" alt="">
+          <h2>Year of Establishment</h2>
+          <h3>1978</h3>
+        </div>
       
-      <div class="card">
-        <img src="./assets/IEC.jpg" alt="">
-        <h2>Import Export Code</h2>
-        <h3>0301*****</h3>
+        <div class="card">
+          <img src="./assets/legal.jpg" alt="">
+          <h2>Legal Status of Firm</h2>
+          <h3>Partnership Firm</h3>
+        </div>
+        <div class="card">
+          <img src="./assets/turnover.jpg" alt="">
+          <h2>Annual Turnover</h2>
+          <h3>Rs.100-500 Crore</h3>
+        </div>
+      
+        <div class="card">
+          <img src="./assets/IEC.jpg" alt="">
+          <h2>Import Export Code</h2>
+          <h3>0301*****</h3>
+        </div>
+        <div class="card">
+          <img src="./assets/GST.jpg" alt="">
+          <h2>GST NO.</h2>
+          <h3>27AGHDGH6789ZP</h3>
+        </div>
       </div>
-
-      <div class="card">
-        <img src="./assets/GST.jpg" alt="">
-        <h2>GST NO.</h2>
-        <h3>27AGHDGH6789ZP</h3>
-      </div>
-  
+      <button id="nextBtn" class="slider-button">>></button>
     </div>
   </section>
   <!-- PAGE 2 -->
@@ -107,31 +116,22 @@
     <div class="products-cont">
       <div class="product-card">
         <img src="https://picsum.photos/200?random=1" alt="">
-        <h2>Name</h2>
-        <p>Lorem ipsum dolor sit am Eos impedit animi deserunt soluta delectus dicta praesentium perspiciatis!</p>
-        <h3>Breif Description about the product</h3>
+        <h2>Di-Ethylene Glycol</h2>
+        <p>Diethylene glycol is used in industry as a solvent, antifreeze, plasticizer, humectant, and in the production of polyester resins.</p>
       </div>
 
       <div class="product-card">
         <img src="https://picsum.photos/200?random=2" alt="">
-        <h2>Name</h2>
-        <p>Lorem ipsum dolor sit am Eos impedit animi deserunt soluta delectus dicta praesentium perspiciatis!</p>
-        <h3>Breif Description about the product</h3>
+        <h2>Mono Ethylene Glycol</h2>
+        <p>Monoethylene glycol is used as antifreeze, coolant, solvent, and in producing polyester fibers, resins, and de-icing solutions.</p>
       </div>
 
       <div class="product-card">
         <img src="https://picsum.photos/200?random=3" alt="">
-        <h2>Name</h2>
-        <p>Lorem ipsum dolor sit am Eos impedit animi deserunt soluta delectus dicta praesentium perspiciatis!</p>
-        <h3>Breif Description about the product</h3>
+        <h2>Tri Ethylene Glycol</h2>
+        <p>Triethylene glycol is used in industry as a dehydrating agent, plasticizer, solvent, humectant, and in natural gas processing.</p>
       </div>
 
-      <div class="product-card">
-        <img src="https://picsum.photos/200?random=4" alt="">
-        <h2>Name</h2>
-        <p>Lorem ipsum dolor sit am Eos impedit animi deserunt soluta delectus dicta praesentium perspiciatis!</p>
-        <h3>Breif Description about the product</h3>
-      </div>
     </div>
     
     <a href="./Products.html">See all products</a>
@@ -140,36 +140,22 @@
 
   <footer>
     <div class="footer-comp-details">
-      <h1>Jain Enterprise</h1>
+      <h1>Syncpolymer Solutions</h1>
       <p>Keeping Industries Cool: Your Trusted Partner in Chemical Cooling Solutions.</p>
-      <div class="footer-social-icons">
-        <a href="#"><i class="fa-brands fa-square-instagram" style="color: #FEF5F5;"></i></a>
-        <a href="#"><i class="fa-brands fa-square-facebook" style="color: #FEF5F5;"></i></a>
-        <a href="#"><i class="fa-brands fa-square-x-twitter" style="color: #FEF5F5;"></i></a>
-        <a href="#"><i class="fa-brands fa-square-pinterest" style="color: #FEF5F5;"></i></a>
-      </div>
     </div>
 
     <div class="footer-link-lists">
-      <div>
-        <h1>Pages</h1>
         <ul>
+          <h1>Pages</h1>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Blogs</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/Products.html">Product</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
         </ul>
-      </div>
-      <div>
-        <h1>About</h1>
-        <ul>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Benefit</a></li>
-        </ul>
-      </div>
+    </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jain Enterprise-Products</title>
+  <script src="https://kit.fontawesome.com/4aefce76b6.js" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://apis.google.com/js/api.js"></script>
+
+</head>
+<body>
+
+  <!-- NAVBAR  -->
+  <nav>
+    <a href="/index.html" class="brand-title"><h1>Syncpolymer Solutions</h1></a>
+    <a href="#" class="toggle-button" id="toggleButton">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
+    <div class="navbar-links" id="navbarLinks">
+      <ul>
+        <a href="/index.html"><li>Home</li></a>
+        <a href="/about.html"><li>About</li></a>
+        <a href="/Products.html"><li>Products</li></a>
+      </ul>
+      <div class="nav-buttons">
+        <a href="/contact.html"><button id="contact-us">Contact Us</button></a>
+        <a href="/contact.html"><button id="locate-us">Locate Us</button></a>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR  -->
+
+  <section class="contact-cont">
+    <div class="contact-address">
+      <h1>Contact Information</h1>
+      <h2>Connect with Us – We're Here to Help!</h2>
+
+      <div class="contact-details">
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
+            <h3>+91 9818156744</h3>
+            <h3>+91 7289001064</h3>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+            <h3>syncpoly7698@gmail.com</h3>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+            <h3>WZ-1390/9A Pankha Road , Nangal Raya Near D-Block Janakpuri , New Delhi</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact-form">
+
+      <form id="form">
+        <div class="consumer-personal-details">
+
+          <div class="form-elements">
+            <label for="first-name">First Name</label>
+            <input type="text"  name = "first-name" id="first-name">
+          </div>
+
+          <div class="form-elements">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+        </div>
+
+        <div class="consumer-contact-details">
+          <div class="form-elements">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+
+          <div class="form-elements">
+            <label for="Phone">Phone Number</label>
+            <input type="text" id="Phone">
+          </div>
+        </div>
+
+        <label for="dropdown-input" id="dropdown-label">Choose a Product to enquire</label>
+        <div class="custom-select-container">
+            <input type="text" id="dropdown-input" placeholder="Select the product" readonly>
+            <div class="options" id="options">
+                <div data-value="PRODUCT 1">PROUCT 1</div>
+                <div data-value="PRODUCT 2">PROUCT 2</div>
+                <div data-value="PRODUCT 3">PROUCT 3</div>
+                <div data-value="PRODUCT 4">PROUCT 4</div>
+                <div data-value="PRODUCT 5">PROUCT 5</div>
+                <div data-value="PRODUCT 6">PROUCT 6</div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="consumer-contact-details">
+
+          <div class="form-elements">
+            <label for="message">Message</label>
+            <input type="text" id="message" placeholder="Write your message here .....">
+          </div>
+
+        </div>
+        <button type="submit" id="contct-form-button" onclick=sendEmail()>Send Message</button>
+      </form>
+
+      <button id="authorize_button" style="display: none;">Authorize</button>
+      <button id="signout_button" style="display: none;">Sign Out</button>
+    
+    </div>
+  </section>
+  <pre id="content"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
