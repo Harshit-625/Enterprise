@@ -98,6 +98,19 @@ nav ul li
   border: none;
   font-size:  1rem;
 }
+.brand-title
+{
+  display: flex;
+}
+.brand-title img{
+  height: 100px;
+}
+.brand-title h1 
+{
+  display: flex;
+  align-items: center;
+  margin-left:1.5vw;
+}
 #contact-us
 {
   background-color: #204E51;
@@ -973,9 +986,13 @@ input[type="submit"]:hover {
     background-color: white;
     z-index: 1;
   }
+
   .brand-title ,.toggle-button
   {
     position: fixed;
+  }
+  .brand-title img{
+    height: 50px;
   }
   .toggle-button
   {
