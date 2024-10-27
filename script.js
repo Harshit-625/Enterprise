@@ -103,7 +103,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// MAP 
+const map = L.map('map').setView([28.608516672889674, 77.10339931800362], 15); // Set coordinates and zoom level
 
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+}).addTo(map);
+
+L.marker([28.608516672889674, 77.10339931800362]).addTo(map) // Set marker location
+    .bindPopup('Syncpolymer Soltuions')
+    .openPopup();
 //MAILING
 var form = document.getElementById("form");
 

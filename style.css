@@ -673,7 +673,13 @@ footer
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
+}
+
+#map{
+  height: 30vh;
+  border-radius: 20px;
+  width: 100%;
 }
 .contact-address h1
 {
@@ -705,7 +711,7 @@ footer
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: 2vh;
   font-size: 2em;
 }
 .contact-details ul li
