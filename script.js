@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 1,
     scrollTrigger: {
       trigger: ".dealer-div",
-      markers: true,
     },
   });
 
