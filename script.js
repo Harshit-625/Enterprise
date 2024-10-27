@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.5,
     scrollTrigger: {
       trigger: ".card",
-      markers: true,
     },
   });
 
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: .75,
     scrollTrigger: {
       trigger: ".dealer-div",
-      markers: true,
     },
   });
 
@@ -58,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: attributeSection,
         start: "top 40%",
-        markers: true,
       },
     });
   });
@@ -72,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: attributeSection,
         start: "top 40%",
-        markers: true,
       },
     });
   });
