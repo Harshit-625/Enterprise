@@ -6,61 +6,137 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleButton.addEventListener("click", () => {
     navbarLinks.classList.toggle("active");
   });
+
+  // HOMEPAGE ANIMATIONS
+  gsap.from(".main h1 , .main p", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+    stagger: 1,
+  });
+
+  gsap.from(".card img", {
+    y: 100,
+    duration: 1,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".card",
+      markers: true,
+    },
+  });
+
+  gsap.from(".dealer-div", {
+    scale: 0.75,
+    duration: 1,
+    opacity: 0,
+    stagger: 1,
+    scrollTrigger: {
+      trigger: ".dealer-div",
+      markers: true,
+    },
+  });
+
+  gsap.from(".product-card", {
+    scale: 0.75,
+    duration: 1,
+    opacity: 0,
+    stagger: .75,
+    scrollTrigger: {
+      trigger: ".dealer-div",
+      markers: true,
+    },
+  });
+
+  // PRODUCTS PAGE ANIMATONs
+  gsap.utils.toArray(".product-attribute").forEach((attributeSection) => {
+    gsap.from(attributeSection.querySelectorAll(".attr"), {
+      y: -10,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: attributeSection,
+        start: "top 40%",
+        markers: true,
+      },
+    });
+  });
+
+  gsap.utils.toArray(".product-attribute-even").forEach((attributeSection) => {
+    gsap.from(attributeSection.querySelectorAll(".attr-even"), {
+      y: -10,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: attributeSection,
+        start: "top 40%",
+        markers: true,
+      },
+    });
+  });
 });
 
+// DROP DOWN FUNTIONALITY
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("myForm");
+  var dropdownInput = document.getElementById("dropdown-input");
+  var options = document.getElementById("options");
+  var dropdownLabel = document.getElementById("dropdown-label");
 
-
-// DROP DOWN FUNTIONALITY 
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.getElementById('myForm');
-  var dropdownInput = document.getElementById('dropdown-input');
-  var options = document.getElementById('options');
-  var dropdownLabel = document.getElementById('dropdown-label');
-
-  dropdownInput.addEventListener('click', function(event) {
-      event.stopPropagation();
-      options.style.display = options.style.display === 'block' ? 'none' : 'block';
+  dropdownInput.addEventListener("click", function (event) {
+    event.stopPropagation();
+    options.style.display =
+      options.style.display === "block" ? "none" : "block";
   });
 
-  document.addEventListener('click', function(event) {
-      if (event.target !== dropdownInput) {
-          options.style.display = 'none';
-      }
+  document.addEventListener("click", function (event) {
+    if (event.target !== dropdownInput) {
+      options.style.display = "none";
+    }
   });
 
-  options.addEventListener('click', function(event) {
-      if (event.target.matches('div[data-value]')) {
-          dropdownInput.value = event.target.textContent;
-          dropdownInput.setAttribute('data-value', event.target.getAttribute('data-value'));
-          options.style.display = 'none';
-      }
+  options.addEventListener("click", function (event) {
+    if (event.target.matches("div[data-value]")) {
+      dropdownInput.value = event.target.textContent;
+      dropdownInput.setAttribute(
+        "data-value",
+        event.target.getAttribute("data-value")
+      );
+      options.style.display = "none";
+    }
   });
-})
+});
 
 //MAILING
-var form = document.getElementById('form');
+var form = document.getElementById("form");
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    var dropdownInput = document.getElementById('dropdown-input');
-    var fname = document.getElementById('first-name').value;
-    var lname = document.getElementById('last-name').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('Phone').value
-    var message = document.getElementById('message').value
-    var enquiredProduct = dropdownInput.getAttribute('data-value');
+  var dropdownInput = document.getElementById("dropdown-input");
+  var fname = document.getElementById("first-name").value;
+  var lname = document.getElementById("last-name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("Phone").value;
+  var message = document.getElementById("message").value;
+  var enquiredProduct = dropdownInput.getAttribute("data-value");
 
-
-
-    var businessEmail = "sambhav1218@gmail.com";
-    var subject = `Enquiry About the ${enquiredProduct}`;
-    var body = `Hi, I ${fname} ${lname}  
+  var businessEmail = "sambhav1218@gmail.com";
+  var subject = `Enquiry About the ${enquiredProduct}`;
+  var body = `Hi, I ${fname} ${lname}  
                 \n Phone : ${phone} 
                 \n Email : ${email} 
                 \n Enquired Product : ${enquiredProduct}
                 \n Message : ${message}`;
 
-    var gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(businessEmail) + "&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    window.open(gmailLink, '_blank');
+  var gmailLink =
+    "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+    encodeURIComponent(businessEmail) +
+    "&su=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+  window.open(gmailLink, "_blank");
 });

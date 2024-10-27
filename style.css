@@ -992,7 +992,7 @@ input[type="submit"]:hover {
     position: fixed;
   }
   .brand-title img{
-    height: 50px;
+    height: 25px;
   }
   .toggle-button
   {
@@ -1041,7 +1041,7 @@ input[type="submit"]:hover {
   .navbar-links.active {
       display: flex;
       flex-direction: column;
-      background-color:#204E51;
+      background-color:#000;
       color: white;
       height: 40vh;
       width: 100vw;
